@@ -1,0 +1,33 @@
+<div class="crop"
+     [style.width.px]="starWidth"
+     [title]="rating">
+  <div style="width: 300px" (click)='OnClick()'>
+    <!--<span class="glyphicon glyphicon-star"></span>
+    <span class="glyphicon glyphicon-star"></span>
+    <span class="glyphicon glyphicon-star"></span>
+    <span class="glyphicon glyphicon-star"></span>
+    <span class="glyphicon glyphicon-star"></span>
+    <span class="glyphicon glyphicon-star"></span>
+    <span class="glyphicon glyphicon-star"></span>
+    <span class="glyphicon glyphicon-star"></span>
+    <span class="glyphicon glyphicon-star"></span>
+    <span class="glyphicon glyphicon-star"></span>-->
+   <!-- <span *ngIf='rating & rating.length'>-->
+          <span *ngIf='rating <= 5'>
+          <span *ngFor='let i of rating | RatingPipe'>
+          <img src='assets/images/Rotten.jpg' style="width: 15px">
+          </span>
+          </span>
+    <span *ngIf='rating > 5 && rating <=7'>
+          <span *ngFor='let i of rating | RatingPipe'>
+          <img src='assets/images/Fresh-Tomato.jpg' style="width: 15px">
+          </span>
+          </span>
+    <span *ngIf='rating > 7'>
+          <span *ngFor='let i of rating | RatingPipe'>
+          <img src='assets/images/Cert-Fresh-Tomato.jpg' style="width: 20px">
+          </span>
+          </span>
+       <!-- </span>-->
+  </div>
+</div>

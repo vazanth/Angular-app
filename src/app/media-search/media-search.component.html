@@ -1,0 +1,58 @@
+<div class='panel panel-primary'>
+  <div class='panel-heading' style='padding-left: 550px;'>
+    {{title}}
+  </div>
+
+
+  <div class='panel-body'>
+    <div class='row'>
+      <div class='col-sm-1'>{{searchBy}}</div>
+        <span>
+        <input type='text' [(ngModel)]='listFilter'/>
+        </span>
+      <!--<div class='col-md-4'>
+        <button class='btn btn-primary' (click)='search(listFilter)'>Search</button>
+      </div>-->
+    </div>
+
+
+    <div class='row'>
+      <div class='col-md-2'>{{filterBy}}
+        <span><b>{{listFilter}}</b></span>
+      </div>
+    </div>
+
+
+    <table class='table' *ngIf='listFilter'>
+      <thead *ngIf='details && details.length'>
+      <tr>
+        <th>
+          <button class='btn btn-primary' (click)='toggle()'>{{showImage?'Hide':'Show'}} Image</button>
+        </th>
+        <th>Name</th>
+        <th>Genere</th>
+        <th>Movie or Series</th>
+        <th>Ratings</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor='let detail of filteredDetails'>
+        <td>
+          <img *ngIf='showImage' [src]='detail.imageurl'
+               title={{detail.Name}}
+               [style.width.px]='ImageWidth' [style.margin.px]='ImageMargin'/>
+        </td>
+        <td><a [routerLink]="['/search',detail.MediaID]">{{detail.Name}}</a></td>
+        <td>{{detail.Genere}}</td>
+        <td>{{detail.MovieorSeries}}</td>
+        <!--<td>{{detail.Rating}}</td>-->
+        <td>
+          <pm-star [rating]='detail.Rating' (ratingOp)='OnRatingop($event)'>
+          </pm-star>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+  </div>
+</div>

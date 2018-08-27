@@ -1,0 +1,34 @@
+[
+  {
+    "MediaID":"1",
+    "Name": "Star Wars: A New Hope",
+    "Genere": "Sci-Fi",
+    "MovieorSeries": "Movie",
+    "Rating": 9,
+    "imageurl": "https://imgc.allpostersimages.com/img/print/posters/star-wars-a-new-hope_a-G-10517793-0.jpg"
+  },
+  {
+    "MediaID":"2",
+    "Name": "Star Wars: The Empire Strikes Back",
+    "Genere": "Sci-Fi",
+    "MovieorSeries": "Movie",
+    "Rating": 10,
+    "imageurl": "https://vignette.wikia.nocookie.net/starwars/images/7/7b/TESBHardcover.png/revision/latest?cb=20150508103704"
+  },
+  {
+    "MediaID":"3",
+    "Name": "Annihilation",
+    "Genere": "Sci-Fi",
+    "MovieorSeries": "Movie",
+    "Rating": 7,
+    "imageurl": "https://www.mauvais-genres.com/22109-large_default/annihilation-advance-movie-poster-29x41-in-2018-alex-garland-nathalie-portman.jpg"
+  },
+  {
+    "MediaID":"4",
+    "Name": "Red Sparrow",
+    "Genere": "Action",
+    "MovieorSeries": "Movie",
+    "Rating": 5,
+    "imageurl": "https://ia.media-imdb.com/images/M/MV5BMTA3MDkxOTc4NDdeQTJeQWpwZ15BbWU4MDAxNzgyNTQz._V1_QL50_SY1000_CR0,0,674,1000_AL_.jpg"
+  }
+]
